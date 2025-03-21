@@ -116,14 +116,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Form styles */
 .form-group {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.25rem;
 }
 
 .form-label {
   display: block;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 .label-icon {
@@ -131,10 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prompt-tips {
-  margin-top: 1.2rem;
-  margin-bottom: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-style: italic;
 }
 
@@ -143,24 +143,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--bg-input);
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  padding: 1.2rem 1.5rem;
+  padding: 0.8rem 1rem;
   width: 100%;
   color: var(--text-primary);
   font-family: 'Exo 2', sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   transition: all 0.3s ease;
   resize: none;
-  min-height: 120px;
+  min-height: 90px;
 }
 
 .aspect-ratio-select {
   min-height: auto;
   height: auto;
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 0.8rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23b8b9cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 1rem center;
+  background-position: right 0.8rem center;
   background-size: 1em;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aspect-ratio-container {
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .input-field:focus {
@@ -187,13 +187,17 @@ h1, h2, h3, h4, h5, h6 {
 .tabs-container {
   display: flex;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   z-index: 1;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .tab {
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.25rem;
   font-family: 'Orbitron', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -204,6 +208,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border: none;
   color: var(--text-secondary);
+  font-size: 0.9rem;
 }
 
 .tab-active {
@@ -234,16 +239,19 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header styles */
 header {
   background-color: var(--bg-card);
-  padding: 2.5rem 0 2rem;
+  padding: 1.5rem 0 1rem;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .header-glow-1, .header-glow-2 {
@@ -273,9 +281,10 @@ header {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 0.75rem;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .title-container {
@@ -285,7 +294,7 @@ header {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   text-align: center;
   background: var(--accent-gradient);
@@ -306,7 +315,7 @@ h1 {
 
 main {
   flex: 1;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 /* API Key input */
@@ -314,16 +323,20 @@ main {
   display: flex;
   margin-bottom: 1.5rem;
   position: relative;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .api-key-input {
   flex: 1;
-  padding: 0.8rem 1rem;
+  padding: 0.7rem 0.9rem;
   border-radius: 4px;
   border: 1px solid var(--border-color);
   background-color: var(--bg-input);
   color: var(--text-primary);
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 100%;
   -webkit-user-select: text;
   user-select: text;
@@ -352,11 +365,12 @@ main {
   background-color: var(--bg-card);
   border-radius: 8px;
   border: 1px solid var(--border-color);
-  padding: 2.5rem;
+  padding: 2rem 1.25rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .card:before {
@@ -372,26 +386,32 @@ main {
 /* Footer styles */
 footer {
   background-color: var(--bg-card);
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   border-top: 1px solid var(--border-color);
   margin-top: auto;
   text-align: center;
   color: var(--text-secondary);
+  font-size: 0.85rem;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  
+  header {
+    padding: 0.75rem 0 0.5rem;
+    margin-bottom: 0.75rem;
   }
   
   .logout-container {
-    top: 1rem;
-    right: 1rem;
+    top: 0.75rem;
+    right: 0.75rem;
   }
   
   .logout-btn {
@@ -402,20 +422,74 @@ footer {
   .logout-text {
     display: none;
   }
+  
+  .card {
+    padding: 1.5rem 0.75rem;
+    margin-bottom: 1rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .api-key-container, .tabs-container {
+    padding: 0;
+    margin-bottom: 1rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1.75rem;
+  }
+  
+  .file-upload-container {
+    height: 200px;
+    padding: 1rem;
+  }
+  
+  .preview-image {
+    max-height: 180px;
+  }
+  
+  .button-container {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    gap: 0.75rem;
+  }
+  
+  .generate-btn {
+    padding: 0.7rem 0.9rem;
+    max-width: 180px;
+  }
+  
+  .clear-all-btn {
+    padding: 0.7rem 0.9rem;
+    min-width: 120px;
+  }
+  
+  .result-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .generated-image {
+    max-height: 400px;
+  }
 }
 
 /* File input styling */
 .file-upload-container {
   border: 2px dashed var(--border-color);
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   background-color: rgba(20, 21, 48, 0.5);
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
-  height: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,7 +503,7 @@ footer {
 
 .preview-image {
   max-width: 100%;
-  max-height: 250px;
+  max-height: 220px;
   border-radius: 4px;
   object-fit: contain;
 }
@@ -437,16 +511,24 @@ footer {
 /* Button styles */
 .button-container {
   margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .generate-btn {
   width: 100%;
-  max-width: 300px;
-  padding: 1.2rem 1.5rem;
-  font-size: 1.1rem;
+  max-width: 250px;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+}
+
+.clear-all-btn {
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  min-width: 140px;
 }
 
 /* Error message */
@@ -534,12 +616,35 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .tab {
-    padding: 0.75rem 1rem;
-    font-size: 0.875rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
   }
   
   .btn {
-    padding: 0.625rem 1.25rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 769px) {
+  .card, .api-key-container, .tabs-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card, .api-key-container, .tabs-container {
+    max-width: 80%;
+  }
+  
+  .container {
+    max-width: 100%;
   }
 }
 
@@ -592,9 +697,9 @@ footer {
 /* Image action buttons */
 .result-title {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   color: var(--primary-color);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .image-container {
@@ -602,14 +707,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .generated-image {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 450px;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   border: 1px solid var(--border-color);

@@ -14,6 +14,19 @@ function App() {
   const [error, setError] = useState(null);
   const [aspectRatio, setAspectRatio] = useState('');
   
+  // Function to clear all inputs and reset the form
+  const handleClearForm = () => {
+    setPrompt('');
+    setAspectRatio('');
+    setError(null);
+    setGeneratedImage(null);
+    
+    if (activeTab === 'image-text-to-image') {
+      setImageFile(null);
+      setPreviewUrl('');
+    }
+  };
+  
   // Reset state when switching tabs
   useEffect(() => {
     // Only reset if not explicitly transferring from text-to-image to image+text mode
@@ -272,6 +285,14 @@ function App() {
                 disabled={isLoading || !prompt.trim() || !apiKey.trim() || (activeTab === 'image-text-to-image' && !imageFile)}
               >
                 {isLoading ? 'Generating...' : 'Generate Image'}
+              </button>
+              <button
+                type="button"
+                className="btn btn-secondary clear-all-btn"
+                onClick={handleClearForm}
+                disabled={isLoading || (!prompt.trim() && !generatedImage && (activeTab === 'text-to-image' || !imageFile))}
+              >
+                <span className="action-icon">🔄</span> Clear All
               </button>
             </div>
           </form>
