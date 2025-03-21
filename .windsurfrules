@@ -1,0 +1,7 @@
+- project is a vite project
+- use javascript NOT typescript
+- use zustand for state management
+- use react-router for routing
+- use axios for api calls
+
+IMPORTANT: always run vite server on default port of 5173 - NEVER change this, do not use any other port, never allow vite to use any other port other than 5173.
